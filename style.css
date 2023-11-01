@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    height: 100%; 
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    font-weight: 100;
+     
+}
+#box{
+    background:#160025;
+    color: #5aff68;
+    text-shadow: #7eff89 1px 1px 5px, 1px -1px 5px, -1px 1px 5px, -1px -1px 5px;
+    padding: 10px;
+    font-size: 8rem;
+    letter-spacing: 9px;
+    font-family: 'League Gothic', sans-serif;
+    box-shadow: purple 1px 1px 10px, purple 1px -1px 10px, purple -1px 1px 10px, purple -1px -1px 10px;
+}
+#boxFinish{
+    background:#160025;
+    color: #ff8000;
+    text-shadow: #7eff89 1px 1px 5px, 1px -1px 5px, -1px 1px 5px, -1px -1px 5px;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 9px;
+    font-family: 'League Gothic', sans-serif;
+    box-shadow: rgb(60, 255, 0) 1px 1px 10px, rgb(60, 255, 0) 1px -1px 10px, rgb(60, 255, 0) -1px 1px 10px, rgb(60, 255, 0) -1px -1px 10px;
+}
+#colorBackground{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 94, 0.388);
+}
+.image-start {
+    background-image: url("img/backgroundFog.gif");
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100%;
+}
+
+.image2{
+    background-image: url("img/running.gif");
+    height: 65%;
+}
+.image3{
+    background-image: url("img/neon.jpg");
+    height: 65%;
+}
+.image-start, .image2, .image3{
+    
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative; 
+    opacity: 1;
+}
+div {
+    display: block;
+}
+
+
+.section {
+    width: 100%;
+    height: 330px;
+    padding: 2rem 3rem;
+    background: #151515;
+    color: white;
+}
+.run1 h2{
+    color: black;
+    text-shadow: red 3px 3px 5px, red -3px 3px 5px, red 3px -3px 5px, red -3px -3px 5px;
+    font-size: 50px;
+}
+.letter{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease
+}
+.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.section h2 {
+    text-align: center;
+}
+.section p  {
+    line-height: 30px;
+    text-align: justify;
+}
+.section-run{
+    background: #151515;;
+    color: #04d9ff;
+    
+}
+.section-run h2{
+    font-size: 50px;
+    text-shadow: #1500ff 1px 1px 3px, 1px -1px 3px, -1px 1px 3px, -1px -1px 3px;
+}
+.section-run li{
+    font-size: 22px;
+    color: #ff6600;
+}
+#fillOut{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;;
+}
+#runForm{
+    height: auto;
+}
+#fillOut h2{
+    color: purple;
+    text-shadow: rgb(235, 82, 255) 3px 3px 5px, rgb(235, 82, 255) -3px 3px 5px, rgb(235, 82, 255) 3px -3px 5px, rgb(235, 82, 255) -3px -3px 5px;
+    text-decoration: underline;
+}
+#fillOut label{
+    color: yellow;
+}
+input[type='text'], input[type='email']{
+    min-width: 80%;
+}
+@media (min-width: 567px) and (max-width: 837px){
+    #box{
+        font-size: 5rem;
+        letter-spacing: 7px;
+    }
+}
+@media (max-width: 566px){
+    #box{
+        font-size: 3rem;
+        letter-spacing: 7px;
+        text-shadow: #7eff89 1px 1px 3px, 1px -1px 3px, -1px 1px 3px, -1px -1px 3px;
+    }
+    #boxFinish{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+    .section-run li{
+        font-size: 18px;
+    }
+}
